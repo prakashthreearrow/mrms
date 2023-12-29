@@ -1,0 +1,92 @@
+.form-control {
+  color: $theme-black !important;
+  border: 1px solid $theme-black;
+  border-radius: 5px;
+  height: 40px;
+  //padding-right: 35px;
+  &:focus {
+    border-color: $theme-black !important;
+    outline: 0;
+    box-shadow: none;
+  }
+  &::placeholder {
+    font-size: 14px;
+    color: #cccccc;
+  }
+}
+
+/* Custom Phone Number Input Format Styles */
+.phone-country-code-input{
+  .form-control{
+    border: 1px solid $theme-black !important;
+    border-radius: 5px !important;
+    height: 40px !important;
+    width: 100% !important;
+    font-size: inherit !important;
+    color: inherit !important;
+  }
+  .flag-dropdown {
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border: 1px solid #33373A !important;
+    border-right: none !important;
+    background-color: #e9ecef !important;
+  }
+  .selected-flag{
+    &:hover{
+      background-color: inherit !important;
+    }
+  }
+}
+
+.password-visibility {
+  position: absolute;
+  top: 7px;
+  right: 22px;
+}
+
+.error {
+  border: 1px solid $theme-error !important;
+}
+
+.invalid {
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: $theme-error;
+  font-family: open-sans-bold, sans-serif;
+}
+
+.prepend {
+  height: 40px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border: 1px solid #33373A;
+  border-right: none;
+}
+
+.append {
+  height: 40px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border: 1px solid #33373A;
+  border-left: none;
+}
+
+.border-left-radius-0 {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.border-right-radius-0 {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.border-left-none {
+  border-left: none;
+}
+
+.border-right-none {
+  border-right: none;
+}

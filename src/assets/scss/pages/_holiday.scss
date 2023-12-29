@@ -1,0 +1,32 @@
+.holiday {
+  .buttons {
+    text-align: right;
+
+    .search-btn {
+      width: 50px;
+      margin-top: 10px;
+      margin-right: 0
+    }
+
+    .add {
+      margin-left: 10px
+    }
+  }
+
+  .search-btn {
+    margin-top: 44px;
+    width: 70px;
+    padding: 10px 10px !important;
+    margin-right: 10px
+  }
+
+  .publish-row {
+    margin-right: auto;
+
+    .btn-disabled {
+      background-color: $Disable-gray;
+      color: $theme-black;
+      border: 1px solid $theme-light-red;
+    }
+  }
+}

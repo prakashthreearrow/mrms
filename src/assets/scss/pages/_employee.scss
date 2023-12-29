@@ -1,0 +1,150 @@
+.employee {
+  .nav-section {
+    overflow: auto;
+    //width: calc(100vw - 45px);
+    ul {
+      display: flex;
+      white-space: nowrap;
+    }
+  }
+}
+
+.table-data {
+  .profile div {
+    background: black;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    padding-top: 9px;
+  }
+  .joined-date{
+    img{
+      margin-right: 10px;
+    }
+  }
+}
+
+.profile-image {
+  border: 2px solid $Black-Color;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.vertical-line {
+  border-right: 1px solid $theme-light-red;
+  height: 100%;
+}
+.horizontal-line {
+  border-bottom: 1px solid $theme-light-red;
+  width: 100%;
+}
+.family-details {
+
+}
+
+.table-wrap {
+  overflow: auto;
+
+  .table {
+    border-color: white !important;
+    white-space: nowrap;
+    border-collapse: unset !important;
+
+    thead {
+      background: $theme-light-red;
+
+      th {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: $White-Color;
+        vertical-align: middle;
+        margin-right: 5px;
+        height: 40px;
+        text-align: center;
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          vertical-align: middle;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 18px;
+          color: $Black-Color;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// F&F page
+.checkbox-margin {
+  margin-left: 0;
+}
+
+@media (max-width: 767.98px) {
+  .checkbox-margin {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .checkbox-margin {
+    margin-left: 30px;
+  }
+}
+
+.external-link-button {
+  border: none;
+  background-color: white;
+}
+
+/*----------------------Experience----------------*/
+.upload-cloud-icon {
+  float: right;
+  margin-top: 1%;
+}
+
+// Qualification page CSS
+.upload-icon {
+  font-size: 22px;
+  float: right;
+}
+
+.file-name-text {
+  font-size: 14px;
+  overflow: hidden;
+  margin-bottom: unset !important;
+}
+.link-position{
+  margin-top: -45px;
+  margin-left: 620px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+//External-links Tab
+.external-link-icon{
+  width: 70px;
+  @media screen and (max-width: 1200px){
+    width: 30px;
+  }
+}

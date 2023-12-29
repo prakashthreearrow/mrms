@@ -1,0 +1,9 @@
+export { default as Address } from "./Address";
+export { default as BasicInfo } from "./BasicInfo";
+export { default as Skills } from "./Skills";
+export { default as ExternalLinks } from "./ExternalLinks";
+export { default as FamilyDetails } from "./FamilyDetails";
+export { default as FF } from "./F&F";
+export { default as Qualification } from "./Qualification";
+export { default as Document } from "./Document";
+export { default as Experience } from "./Experience";

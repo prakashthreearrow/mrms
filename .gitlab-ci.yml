@@ -1,0 +1,40 @@
+stages:
+  - build
+  - deploy
+
+build:
+  image: node:12.19.0
+  stage: build
+  only:
+    - staging
+    - pre-production
+    - production
+  artifacts:
+    paths:
+      - build/
+  script: npm run build
+  before_script:
+    - export env_file=${CI_COMMIT_REF_NAME/-/_}_env
+    - cp ${!env_file} ./.env
+    - npm i -g env-cmd
+    - npm install -g react-scripts
+    - npm install
+
+deploy:
+  image: python:latest
+  stage: deploy
+  only:
+    - staging
+    - pre-production
+    - production
+  dependencies:
+    - build
+  script:
+    - bucket_name=${CI_COMMIT_REF_NAME/-/_}_bucket_name
+    - cloud_front_id=${CI_COMMIT_REF_NAME/-/_}_cloud_front_id
+    - aws s3 rm s3://${!bucket_name} --recursive
+    - aws s3 cp build/ s3://${!bucket_name} --recursive
+    - aws cloudfront create-invalidation --distribution-id ${!cloud_front_id} --paths '/*'
+  before_script:
+    - pip install awscli --upgrade
+

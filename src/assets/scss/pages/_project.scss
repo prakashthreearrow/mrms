@@ -1,0 +1,17 @@
+.client-details {
+  .input-group-prepend .react-select__control{
+    width: 100px !important;
+    border-radius: 5px 0 0 5px;
+    background-color: #e9ecef;
+    height: 40px;
+    cursor: pointer;
+  }
+  .custom-input-group{
+    border: 1px solid $theme-black;
+    border-radius: 5px;
+  }
+
+  .custom-input-group .css-1hb7zxy-IndicatorsContainer{
+    display: none;
+  }
+}

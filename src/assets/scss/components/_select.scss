@@ -1,0 +1,30 @@
+.form-select {
+  color: $theme-black !important;
+  border: 1px solid $theme-black;
+  border-radius: 5px;
+  //height: 40px;
+  //padding-right: 35px;
+  &:focus {
+    border-color: $theme-black !important;
+    outline: 0;
+    box-shadow: none;
+  }
+  &::placeholder {
+    font-size: 14px;
+    color: #cccccc;
+  }
+}
+
+.error {
+  border: 1px solid $theme-error !important;
+}
+
+.invalid {
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: $theme-error;
+  font-family: open-sans-bold, sans-serif;
+}
+
+

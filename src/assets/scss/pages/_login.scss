@@ -1,0 +1,21 @@
+.login-main{
+  min-height: 100vh;
+  background-image: url("../../../assets/images/login-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  .login-detail{
+    background: rgba(0,0,0,0.8);
+    box-shadow: 8px 8px 8px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  a {
+    color: white;
+  }
+}
